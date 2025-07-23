@@ -9,7 +9,7 @@ public class AppendToString {
 	public static void main(String[] args) {
 
 		List<String> asList = Arrays.asList("Alice", "Bob", "Charlie");
-		List<String> collect = asList.stream().map(name -> "Mr " + name).collect(Collectors.toList());
+		List<String> collect = asList.stream().map(name -> "Mr: " + name).collect(Collectors.toList());
 		System.out.println(collect);
 	}
 
